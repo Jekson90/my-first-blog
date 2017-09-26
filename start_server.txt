@@ -1,3 +1,16 @@
 перейти в папку с проектом: cd ...
 запуск виртуального окружения: myvenv\Scripts\activate
 запуск сервера: python manage.py runserver
+
+Обновление:
+Сначала загружаем код на Github
+    git status
+    git add --all .
+    git status
+    git commit -m "Modified templates to display posts from database."
+    git push
+Затем заходим на PythonAnywhere, открываем Bash console и набираем команду:
+    переходим в каталог: cd my-first-blog
+    подключаем виртуальное окружение: source myvenv/bin/activate
+    пуллим: git pull
+жмем релоад на PythonAnywhere
